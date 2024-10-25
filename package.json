@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.1.0",
+    "@vercel/speed-insights": "^1.0.13",
     "astro": "^4.16.2"
   },
   "devDependencies": {

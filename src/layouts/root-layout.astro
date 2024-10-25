@@ -2,6 +2,7 @@
 import Footer from "@/components/footer.astro";
 import Header from "@/components/header.astro";
 import "@fontsource-variable/inter";
+import SpeedInsights from "@vercel/speed-insights/astro";
 
 interface Props {
   title: string;
@@ -52,6 +53,8 @@ const ogImageUrl = new URL("/og-image.png", Astro.site);
     <meta property="twitter:image" content={ogImageUrl} />
     <meta name="twitter:site" content="@mrcaidev" />
     <meta name="twitter:creator" content="@mrcaidev" />
+
+    <SpeedInsights />
   </head>
 
   <body
