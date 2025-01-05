@@ -9,7 +9,7 @@ export const getStaticPaths = (async ({ paginate }) => {
   return paginate(
     posts
       .sort((a, b) => b.data.createdAt.getTime() - a.data.createdAt.getTime())
-      .map(({ slug, data }) => ({ slug, ...data })),
+      .map(({ id, data }) => ({ id, ...data })),
     { pageSize: 4 },
   );
 }) satisfies GetStaticPaths;
