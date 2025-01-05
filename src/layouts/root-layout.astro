@@ -13,7 +13,7 @@ const { title: subtitle, description } = Astro.props;
 
 const title = subtitle ? subtitle + " | Yuwang Cai" : "Yuwang Cai";
 const url = new URL(Astro.url.pathname, Astro.site);
-const ogImageUrl = new URL("/og-image.png", Astro.site);
+const ogImageUrl = new URL("/og.png", Astro.site);
 ---
 
 <html lang="en">
