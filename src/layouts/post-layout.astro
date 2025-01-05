@@ -11,7 +11,7 @@ const { title, description, createdAt } = Astro.props;
 ---
 
 <RootLayout title={title} description={description}>
-  <Fragment slot="og-type">
+  <Fragment slot="head">
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content={createdAt.toISOString()} />
     <meta property="article:author" content="Yuwang Cai" />

@@ -37,28 +37,25 @@ const ogImageUrl = new URL("/og-image.png", Astro.site);
     <meta name="robots" content="index, follow" />
 
     <meta property="og:title" content={title} />
-    <slot name="og-type" />
-    <meta property="og:image" content={ogImageUrl} />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Logo" />
-    <meta property="og:url" content={url} />
     <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:url" content={url} />
     <meta property="og:site_name" content="Yuwang Cai" />
 
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta property="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image" content={ogImageUrl} />
     <meta name="twitter:site" content="@mrcaidev" />
     <meta name="twitter:creator" content="@mrcaidev" />
+
+    <slot name="head" />
 
     <SpeedInsights />
   </head>
 
   <body
-    class="bg-gray-950 font-sans text-gray-200 antialiased scrollbar scrollbar-rounded scrollbar-track-color-transparent scrollbar-thumb-color-gray-800"
+    class="bg-gray-950 text-gray-200 font-sans antialiased scrollbar scrollbar-rounded scrollbar-track-color-transparent scrollbar-thumb-color-gray-800"
   >
     <Header />
     <main class="flex flex-col max-w-3xl min-h-screen px-8 pt-24 pb-16 mx-auto">

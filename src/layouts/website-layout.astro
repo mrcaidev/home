@@ -10,7 +10,7 @@ const { title, description } = Astro.props;
 ---
 
 <RootLayout title={title} description={description}>
-  <Fragment slot="og-type">
+  <Fragment slot="head">
     <meta property="og:type" content="website" />
   </Fragment>
   <slot />
