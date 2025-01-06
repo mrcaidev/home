@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@astrojs/sitemap": "^3.2.1",
     "@fontsource-variable/inter": "^5.1.1",
     "@iconify-json/lucide": "^1.2.20",
     "@iconify-json/simple-icons": "^1.2.18",
